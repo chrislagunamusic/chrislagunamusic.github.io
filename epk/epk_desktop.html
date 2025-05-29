@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html style="background-image: url('/resources/img/background.jpg');">
+<head>
+<link rel="shortcut icon" href="#">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Joti+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Joti+One&family=Mukta+Vaani:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="/getPlatformUrl.js"></script>
+
+
+<script> 
+$(function(){
+  $("#column1-top-contents").load("/epk/epk_column1_top.html")
+  $("#column1-middle-contents").load("/epk/epk_column1_middle.html")
+  $("#column1-bottom-contents").load("/epk/epk_column1_bottom.html")
+
+  $("#column2-contents").load("/epk/epk_column2.html"); 
+
+  $("#portfolio-tracks").load("/epk/epk_portfolio_tracks_desktop.html");
+  $("#live-videos").load("/epk/epk_live_videos_desktop.html");
+
+
+});
+</script> 
+
+<script type="text/javascript">
+
+loadPlatformCss("/style/common")
+loadPlatformCss("/style/epk")
+loadPlatformCss("/style/fonts");
+
+</script>
+
+</head>
+<body>
+
+<div class="nav-bar">
+<a href="/index.html"><img src="/resources/img/HomeIcon.png" alt="Home" style="width:2em;"></a>
+</div>
+
+<h1><b>Chris Laguna Electronic Press Kit</b></h1>
+
+<div class="row">
+  <div class="column1">
+    <div id="column1-top-contents"></div>
+    <div id="portfolio-tracks"></div>
+    <div id="column1-middle-contents"></div>
+    <div id="live-videos"></div>
+    <div id="column1-bottom-contents"></div>
+  </div>
+
+  <div class="column2">
+    <div id="column2-contents"></div>
+  </div>
+</div>
+
+<p>
+  <iframe scrolling="no" style="border: 0;width: 100%;height: 33px;" src="https://bandcamp.com/band_follow_button_classic/62926045"></iframe>
+</p>
+
+</body>
+</html>
