@@ -6,9 +6,9 @@ function getPlatformHtml(urlPrefix) {
      postfix = "_mobile.html";
    }
    // iPad. Treat like mobile.
-   else if ( (navigator.platform.toLowerCase().indexOf("ipad") != -1) || ((navigator.platform.toLowerCase().indexOf("macintel") != -1) && (navigator.maxTouchPoints > 1)) )  {
-     postfix = "_mobile.html";
-   }
+   // else if ( (navigator.platform.toLowerCase().indexOf("ipad") != -1) || ((navigator.platform.toLowerCase().indexOf("macintel") != -1) && (navigator.maxTouchPoints > 1)) )  {
+   //   postfix = "_mobile.html";
+   // }
    // Assume anything else is a desktop/laptop
    else
    {
@@ -26,9 +26,9 @@ function getPlatformCss(urlPrefix) {
      postfix = "_mobile.css";
    }
    // iPad. Treat like mobile.
-   else if ( (navigator.platform.toLowerCase().indexOf("ipad") != -1) || ((navigator.platform.toLowerCase().indexOf("macintel") != -1) && (navigator.maxTouchPoints > 1)) )  {
-     postfix = "_mobile.css";
-   }
+   // else if ( (navigator.platform.toLowerCase().indexOf("ipad") != -1) || ((navigator.platform.toLowerCase().indexOf("macintel") != -1) && (navigator.maxTouchPoints > 1)) )  {
+   //   postfix = "_mobile.css";
+   // }
    // Assume anything else is a desktop/laptop
    else
    {
